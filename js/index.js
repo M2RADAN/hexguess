@@ -6,7 +6,6 @@ let msgl = document.getElementById("msgl");
 let msgr = document.getElementById("msgr");
 let value, result, r, g, b, ar, ag, ab, colorH, answer;
 generate();
-
 let form = document.getElementById("form");
 
 form.addEventListener("submit", function (event) {

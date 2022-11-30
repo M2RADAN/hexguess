@@ -1,0 +1,208 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid #FFFFFF;
+    background-color: #1D1D1D;
+}
+
+@font-face {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 400;
+    src: local('K2D Regular'), local('K2D-Regular'),
+        url('/source/fonts/K2D-Regular.ttf');
+}
+@font-face {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 500;
+    src: local('K2D Medium'), local('K2D Medium'),
+        url('/source/fonts/K2D-Medium.ttf');
+}
+@font-face {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 600;
+    src: local('K2D ExtraBold'), local('K2D ExtraBold'),
+        url('/source/fonts/K2D-ExtraBold.ttf');
+}
+
+html {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 400;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.head {
+    height: 10vh;
+}
+.main {
+    height: 86vh;
+}
+.wrapper {
+    margin:0 auto;
+}
+.header__logo {
+    width: 400px;
+    height: 80px;
+    font-size: 40px;
+    background: #1D1D1D;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 20px solid #FFFFFF;
+    border-right: 20px solid #FFFFFF;
+}
+.content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.square {
+    width: 440px;
+    height: 340px;
+    background-color: #42FF40;
+    border: 20px solid #FFFFFF;
+    margin-top: 10vh; 
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+.answer {
+    width: max-content;
+    font-size: 60px;
+    text-transform: uppercase;
+    opacity: 80%;
+    color: #000000;
+}
+form {
+    display: flex;
+    flex-direction: row;
+}
+.row {
+    font-size: 0px;
+    margin-top: 2vh;
+    width: 415px;
+    height: 70px;
+    background-color: #1D1D1D;
+    border: 10px solid #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
+.box {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 60px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-right: 10px solid #FFFFFF;
+}
+.inputBox {
+    margin-left: 5px;
+    font-size: 32px;
+    display: flex;
+    width: 230px;
+    height: 50px;
+    background-color: #1D1D1D;
+    border-right: 10px solid #FFFFFF;
+}
+.submitBox {
+    font-size: 32px;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    background-color: #000000;
+}
+input[type=submit] {
+
+    width: 100px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    outline:none;
+    border: 0;
+    color: #FFFFFF;
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 600;
+    background: #000000;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #1D1D1D;
+}
+input[type=text] {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 400;
+    width: 210px;
+    height: 50px;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    background: #1D1D1D;
+    outline:none;
+    border: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.mess {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 60px;
+    margin: auto;
+}
+footer {
+    height: 4vh;
+    border-top: 10px solid #FFFFFF;
+    color: #FFFFFF;
+    background: #1D1D1D;
+}

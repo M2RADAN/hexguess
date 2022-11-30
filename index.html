@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="./js/index.js" defer type="module"></script>
+    <title>HEX GUESS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="head">
+        <h1 class="header__logo">HEX GUESS</h1>
+      </div>
+    </div>
+    <main class="main">
+      <div class="wrapper">
+        <div class="content">
+          <div class="mess">
+            <div id="msgl" class="msg">99%</div>
+
+            <div class="square" id="square">
+              <div class="answer" id="answer">#FF0940</div>
+            </div>
+
+            <div id="msgr" class="msg">99%</div>
+          </div>
+
+          <div class="row">
+            <div class="box">#</div>
+
+            <form id="form">
+              <div class="inputBox">
+                <input
+                  id="input"
+                  type="text"
+                  autocomplete="off"
+                  size="6"
+                  maxlength="6"
+                  minlength="6"
+                  required
+                  placeholder="FFFFFF"
+                />
+              </div>
+              <div class="submitBox">
+                <input type="submit" value="OK" id="submit" />
+              </div>
+            </form>
+          </div>
+
+          <div class="table"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>By ZnDl</footer>
+  </body>
+</html>

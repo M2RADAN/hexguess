@@ -11,7 +11,6 @@ let form = document.getElementById("form");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   value = document.getElementById("input").value;
-  // hvalue = parseInt(value, 16); ? записываются и нигде не используются
   calculate();
   msgl.style.display = "";
   msgr.style.display = "";
@@ -68,7 +67,6 @@ function generate() {
     (b = Math.floor(Math.random() * 256)),
     (colorH = "#" + r.toString(16) + g.toString(16) + b.toString(16));
   answer = r.toString(16) + g.toString(16) + b.toString(16);
-  // hvanswer = parseInt(answer, 16); ? записываются и нигде не используются
   msgl.style.display = "none";
   msgr.style.display = "none";
   answerText.style.display = "none";

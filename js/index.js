@@ -45,7 +45,7 @@ function hsplit() {
   }
 }
 
-answerText.onclick = () => {
+document.getElementById("input").onclick = () => {
   generate();
 };
 function calculate() {

@@ -1,4 +1,4 @@
-@import "./fonts.css";
+@import "/css/fonts.css";
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -60,9 +60,11 @@ body {
   justify-content: center;
   border-bottom: 20px solid #ffffff;
   border-right: 20px solid #ffffff;
+  margin: 0;
 }
 .main {
   margin: 0 auto;
+  height: 85vh;
 }
 .content {
   margin: 0 auto;
@@ -158,6 +160,7 @@ input[type="text"] {
   text-transform: uppercase;
 }
 .mess {
+  margin-top: 5vh;
   display: flex;
   justify-content: space-between;
 }
@@ -172,8 +175,12 @@ input[type="text"] {
   margin: auto;
 }
 footer {
-  height: 4vh;
+  height: 5vh;
   border-top: 10px solid #ffffff;
   color: #ffffff;
   background: #1d1d1d;
+}
+.head {
+  height: 10vh;
+  margin: auto;
 }
